@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="time">Время</string>
+    <string name="menu">Меню</string>
+    <string name="start">Старт</string>
+    <string name="setting">Настройки</string>
+    <string name="sound_on_off">Звук вкл/выкл</string>
+    <string name="vibration_on_off">Вибрации вкл/выкл</string>
+    <string name="language">Язык</string>
+    <string name="en">EN</string>
+    <string name="ru">RU</string>
+    <string name="back_to_menu">Назад в меню</string>
+    <string name="you_win">Проиграл</string>
+    <string name="you_lose">Выйграл</string>
+</resources>

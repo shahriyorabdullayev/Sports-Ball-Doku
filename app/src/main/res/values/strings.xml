@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Sports BallDoku</string>
+    <string name="time">TIME</string>
+    <string name="menu">Menu</string>
+    <string name="start">Start</string>
+    <string name="setting">Setting</string>
+    <string name="sound_on_off">Sound On/Off</string>
+    <string name="vibration_on_off">Vibration On/Off</string>
+    <string name="language">Language</string>
+    <string name="en">EN</string>
+    <string name="ru">RU</string>
+    <string name="back_to_menu">Back to menu</string>
+    <string name="you_win">You win</string>
+    <string name="you_lose">You Lose</string>
+
+</resources>

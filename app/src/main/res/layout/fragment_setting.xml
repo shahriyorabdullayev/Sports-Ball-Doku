@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@drawable/bg_top_menu"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center"
+            android:text="@string/setting"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_back_to_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_setting_title"
+                android:text="@string/sound_on_off"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+
+                    android:id="@+id/ll_sound_on"
+                    android:layout_width="86dp"
+                    android:background="@drawable/bg_setting_title"
+                    android:layout_height="86dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginHorizontal="32dp"
+                    app:cardCornerRadius="18dp">
+
+                    <ImageView
+                        android:id="@+id/btn_sound_on"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_sound_on_selected"
+                        android:padding="12dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_sound_off"
+                    android:layout_width="86dp"
+                    app:cardCornerRadius="18dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_height="86dp">
+                    <ImageView
+                        android:id="@+id/btn_sound_off"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_sound_off_selected"
+                        android:padding="12dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_setting_title"
+                android:text="@string/vibration_on_off"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/ll_vibration_on"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginHorizontal="32dp"
+                    app:cardCornerRadius="18dp">
+
+                    <ImageView
+                        android:id="@+id/btn_vibration_on"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_vibration_on_not_selected"
+                        android:padding="12dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_vibration_off"
+                    android:layout_width="86dp"
+                    app:cardCornerRadius="18dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_height="86dp">
+                    <ImageView
+                        android:id="@+id/btn_vibration_off"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_vibration_off_selected"
+                        android:padding="12dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_setting_title"
+                android:text="@string/language"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/ll_en"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginHorizontal="32dp"
+                    app:cardCornerRadius="18dp"
+                    android:background="@drawable/bg_sound_on">
+
+                    <TextView
+                        android:id="@+id/tv_en"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/en"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ru"
+                    android:layout_width="86dp"
+                    app:cardCornerRadius="18dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_height="86dp"
+                    android:background="@drawable/bg_sound_off">
+                    <TextView
+                        android:id="@+id/tv_ru"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/ru"
+                        android:textColor="@color/blue_1"
+                        android:textSize="30dp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_back_to_menu"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="@color/blue_1"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/back_to_menu"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
